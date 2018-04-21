@@ -112,33 +112,152 @@
 .search_icon{
     background-position: -848px -848px;
 }
-.top_section{
+/*.top_section{
     margin:10px 10px 10px 10px;
-}
+}*/
 .left_div{
+    position: relative;
     display: inline-block;
     width: 65%;
     height: 100%;
-    background-color: #888888;
+    min-height: 342px;
+    /*background-color: #888888;*/
    /* margin-right: 10px;*/
    border:5px solid #fff;
     float: left;
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/325345436-796x417.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
+.left_div .gradient{
+    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+    background-position: top left;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+   mix-blend-mode: lighten;
+}
+.left_div .backgroung_effect{
+    height: 100%;
+    background:rgba(0,0,0,0.25);
+    z-index: 5;
+}
+.upper_right_div .backgroung_effect{
+    height: 100%;
+    background:rgba(0,0,0,0.25);
+    z-index: 5;
+}
+.lower_right_div .backgroung_effect{
+    height: 100%;
+    background:rgba(0,0,0,0.25);
+    z-index: 5;
+}
+.logo{
+    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 100%;
+    min-width: 50%;
+    max-height: 112px;
+    z-index: 10;
+}
+.date_time{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    letter-spacing: 3px;
+}
+.left_div header{
+    position: absolute;
+    bottom :4px;
+    left:20px;
+}
+.lower_right_div,.upper_right_div{
+    min-height: 171px;
+}
+.lower_right_div header,.upper_right_div header{
+      position: absolute;
+    bottom :4px;
+    left:10px;
+}
+.details li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.above_header{
+    color: #fff;
+}
+.left_div header h1{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Black Han Sans', sans-serif;
+}
+.lower_right_div header h1,.upper_right_div header h1{
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Black Han Sans', sans-serif;
+}
+.time_clock{
+    display: inline-block;
+    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
+    background-position: -160px -160px;
+     width: 16px;
+    height: 16px;
+    opacity: 0.6;
+    vertical-align: bottom;
+}
+.share_icon{
+    display: inline-block;
+    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
+    background-position: -912px -912px;
+     width: 16px;
+    height: 16px;
+    opacity: 0.6;
+    vertical-align: bottom;
+}
+/*.lower_right_div .gradient{
+    background: transparent;
+    background:linear-gradient(to top,#444444,#555555);
+    height: 50%;
+    z-index: 6;
+}
+.upper_right_div .gradient{
+
+}*/
 .upper_right_div,.lower_right_div{
+    position: relative;
     display: inline-block;
     width: 35%;
     height: 50%;
-    background-color: #888888;
     float: right;
     border:5px solid #fff;
 /*   position: relative;*/
 }
 .upper_right_div{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/daisy-robot-796x419.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 .lower_right_div{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/facebook-1-796x431.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 .top_section{
     height: 75vh;
+    margin:2px;
+    min-height: 342px;
 }
 .top_section:after{
         content:".";
@@ -149,4 +268,93 @@
 }
 .Helper_block{
     height: 100%;
+}
+.latest_news{
+    width: 90%;
+    margin:0 auto;
+    /*background-color: #888888;*/
+}
+/*.img-1{
+    background-image: url();
+}
+.img-2{
+         background-image: url();
+}
+.img-3{
+     background-image: url();
+}
+.img-4{
+         background-image: url();
+}
+.img-5{
+     background-image: url();
+}
+.img-6{
+     background-image: url();
+}
+.img-7{
+ background-image: url();
+}
+.img-8{
+     background-image: url();
+}*/
+.all_news img{
+    width: 100%;
+    height:135px;
+}
+/*.all_news a:before{
+    content: ".";
+    display: block;
+    height: 0;
+    visibility:none;
+}
+.all_news a:after{
+    content: ".";
+    display: block;
+    height: 0;
+    visibility:none;
+}*/
+.all_news div{
+    margin: 5px;
+}
+.all_news li{
+    display: inline-block;
+    max-width: 23%;
+    /*float: left;*/
+    vertical-align: top;
+}
+.all_news ul:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: left;
+    visibility:hidden;
+}
+li[class*="new"]{
+    margin:7px;
+}
+.latest_news h1{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.latest_news h1 a{
+    color: red;
+}
+.all_news h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.all_news .details li a{
+    color:#cbcbcb;
+}
+.all_news .details li:first-child:after{
+    content: ".";
+    display: inline-block;
+    height: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #cbcbcb;
 }
