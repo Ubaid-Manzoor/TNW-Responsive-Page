@@ -112,17 +112,12 @@
 .search_icon{
     background-position: -848px -848px;
 }
-/*.top_section{
-    margin:10px 10px 10px 10px;
-}*/
 .left_div{
     position: relative;
     display: inline-block;
     width: 65%;
     height: 100%;
     min-height: 342px;
-    /*background-color: #888888;*/
-   /* margin-right: 10px;*/
    border:5px solid #fff;
     float: left;
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/325345436-796x417.jpg);
@@ -195,6 +190,7 @@
 }
 .above_header{
     color: #fff;
+    margin-bottom: 10px;
 }
 .left_div header h1{
     font-size: 50px;
@@ -224,15 +220,6 @@
     opacity: 0.6;
     vertical-align: bottom;
 }
-/*.lower_right_div .gradient{
-    background: transparent;
-    background:linear-gradient(to top,#444444,#555555);
-    height: 50%;
-    z-index: 6;
-}
-.upper_right_div .gradient{
-
-}*/
 .upper_right_div,.lower_right_div{
     position: relative;
     display: inline-block;
@@ -240,7 +227,6 @@
     height: 50%;
     float: right;
     border:5px solid #fff;
-/*   position: relative;*/
 }
 .upper_right_div{
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/daisy-robot-796x419.jpg);
@@ -274,46 +260,10 @@
     margin:0 auto;
     /*background-color: #888888;*/
 }
-/*.img-1{
-    background-image: url();
-}
-.img-2{
-         background-image: url();
-}
-.img-3{
-     background-image: url();
-}
-.img-4{
-         background-image: url();
-}
-.img-5{
-     background-image: url();
-}
-.img-6{
-     background-image: url();
-}
-.img-7{
- background-image: url();
-}
-.img-8{
-     background-image: url();
-}*/
 .all_news img{
     width: 100%;
     height:135px;
 }
-/*.all_news a:before{
-    content: ".";
-    display: block;
-    height: 0;
-    visibility:none;
-}
-.all_news a:after{
-    content: ".";
-    display: block;
-    height: 0;
-    visibility:none;
-}*/
 .all_news div{
     margin: 5px;
 }
@@ -357,4 +307,359 @@ li[class*="new"]{
     padding-right: 5px;
     padding-left: 5px;
     color: #cbcbcb;
+}
+.latest_funding{
+    width: 90%;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+.latest_funding header{
+    margin-bottom: 20px;
+}
+.latest_funding header h1{
+    display: inline-block;
+    font-size: 20px;
+  font-family: 'Black Han Sans', sans-serif;
+  color: #f42;
+  cursor: pointer;
+}
+.latest_funding header h1:hover{
+    color: #000;
+}
+.latest_funding header ul{
+    display: inline-block;
+    float: right;
+}
+.latest_funding header ul:after{
+    content: ".";
+    display: inline-block;
+    clear: right;
+    visibility: hidden;
+}
+.latest_funding header li{
+    display: inline-block;
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 2px solid #444;
+    color: #f42;
+    cursor: pointer;
+}
+.latest_funding header li:hover{
+    color: #000;
+}
+.latest_funding header li:first-child{
+      border-right: 0;
+}
+.latest_funding main h1{
+    font-size: 16px;
+    font-family: initial;
+}
+.box-1,.box-2,.box-3,.box-4{
+    margin-right: 25px;
+}
+.box-4{
+    margin-right: 0;
+}
+div[class*="box"]:after{
+    content: ".";
+    display: block;
+    clear: left;
+    height: 0;
+    visibility: hidden;
+}
+.latest_funding main:after{
+     content: ".";
+    display: block;
+    clear: left;
+    height: 0;
+    visibility: hidden;
+}
+.top .info ,.top h1{
+    padding-left: 30%;
+    width: 100%;
+} 
+.top .info{
+    background-color: rgba(255,68,34,.08);
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+.top h1{
+     background-color: #f42;
+     padding-bottom: 10px;
+     padding-top: 10px;
+}
+.top img{
+    position: absolute;
+    max-height: 60px;
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    margin:10px;
+}
+.tag_icon,.bag_icon{
+    vertical-align: bottom;
+    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
+}
+.tag_icon{
+        background-size: 1296px 1296px;
+        background-position: -976px -976px;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+}
+.bag_icon{
+        background-size: 1296px 1296px;
+        background-position: -48px -48px;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+}
+div[class*="box"] ul li{
+    padding:15px 15px 0 15px;
+}
+div[class*="box"] ul li:last-child{
+    padding-bottom: 20px;
+}
+div[class*="box"] ul{
+    border-bottom: 1px solid #f42;
+}
+div[class*="box"]{
+/*    height: 100%;*/
+    background-color: #fffaf8;
+}
+.text{
+    padding:10px;
+}
+.text a{
+    color: #888;
+}
+.text span{
+    color: #cbcbcb;
+}
+.middle_section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 1.5em;
+    grid-row-gap: 3em;
+    margin-bottom: 40px;
+}
+.middle_section h2{
+    font-weight: 700;
+    font-size: 26px;
+    color: #f42;
+    margin-bottom: 10px;
+}
+.latest_funding main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.main_img{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/ICO-predictions-for-2018_-Big-changes-for-utility-tokens-368x276.png);
+    height: 275px;
+    background-position: center center;
+    background-size: cover; 
+}
+.latest{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+.column_1{
+    padding:15px 15px 10px 10px;
+    font-size: 16px;
+    font-weight: 900;
+    font-family:sans-serif;
+}
+.column_1 h3,.column_1 a{
+    color: #f42;
+    cursor: pointer;
+}
+.column_1 h3:hover,.column_1 a:hover{
+    text-decoration: underline;
+}
+.column_1 h3{
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+.column_2{
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/325345436.jpg);
+   background-position: center center;
+    background-size: cover; 
+    height: 97px;
+}
+.points li{
+    border-bottom: 1px solid #cbcbcb;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #888888;
+    padding-left: 15px;
+    position: relative;
+}
+.points li:before{
+    content: " ";
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    height: 4px;
+    left: 0;
+    width: 4px;
+    top: 12px;
+    background: #f43;
+}
+.bottom_section{
+    width: 90%;
+    margin:0 auto;
+}
+.bottom_section h2{
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    color: #f42;
+    margin-bottom: 20px;
+}
+.bottom_section ul{
+    display: inline-block;
+    float: right;
+    font-size: 18px;
+}
+.bottom_section ul li{
+    color: #f42;
+}
+.bottom_section h2:hover,.bottom_section ul li:hover{
+    color: #000;
+    cursor: pointer;
+}
+.latest_deals{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 2em;
+    margin-bottom: 40px;
+}
+.offers{
+    position: relative;
+}
+.main_image{
+    background-image: url(https://cdnp1.stackassets.com/1036dcefde3e8eae20f2358798bee88df496e8df/store/e9ca3176014afd39d0880b2aff9931bc21500020ce765691c0e66aebeb41/sale_3713_image-update.jpg);
+    top:0;
+    width: 100%;
+    display: block;
+    padding-top: 74.5%;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+}
+.discount_image{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+    background-size: cover;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+}
+.discount_image div{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-weight: 600;
+}
+.details_of_course h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.details_of_course .old_price{
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+.details_of_course .new_price{
+        color: #888;
+}
+.social_links i{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.main_footer{
+
+}
+.fb-1{
+    background-position: -272px -272px;
+}
+.twitter-1{
+        background-position: -1024px -1024px;
+}
+.youtube{
+        background-position: -1280px -1280px;
+}
+.instragram{
+            background-position: -416px -416px;
+}
+.picart{
+        background-position: -672px -672px;
+}
+.wifi{
+        background-position: -816px -816px;
+}
+.email-1{
+        background-position: -576px -576px;
+}
+.upper_footer{
+    padding: 20px;
+   background:#131313;
+    text-align: center;
+}
+.upper_footer li{
+    display: inline-block;
+}
+.upper_footer li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #888;
+    padding: 9px;
+    display: inline-block;
+    margin-right: 20px;
+     cursor: pointer;
+}
+.upper_footer li a:hover{
+    background: #000;
+}
+.menu_links{
+    color: #FFF;
+    margin-top: 25px;
+    font-size: 15px;
+}
+.menu_links li{
+    margin-right: 10px;
+    font-family: 'Exo', sans-serif;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.menu_links li:hover{
+    opacity: 1;
+}
+.content img{
+    height: 9px;
+}
+.content{
+    padding: 20px;
+}
+.lower_footer{
+    text-align: center;
+    background: #000;
+}
+.lower_footer span{
+    color: #fff;
+    font-size: 12px;
 }
