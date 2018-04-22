@@ -6,6 +6,8 @@
 .nav-1{
     padding: 10px 10px 10px 20px;
     background-color:#000000;
+    max-height: 35px;
+    overflow: hidden;
 }
 .nav-1 a{
     color: #ffffff;
