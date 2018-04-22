@@ -24,10 +24,11 @@
 .nav-2{
     padding-left:20px;
     background-color:#fff;
-    box-shadow: 0 1px 10px #888888;
+    /* box-shadow: 0 1px 10px #888888; */
     font-size: 16px;
     font-family: 'Fredericka the Great', cursive;
-    height:45px;
+    height: 45px;
+    border-bottom: 1px solid #f1e9e9;
 }
 .nav-2 a{
     color: #000000;
@@ -114,28 +115,29 @@
 }
 .left_div{
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     width: 65%;
     height: 100%;
     min-height: 342px;
-   border:5px solid #fff;
+    border:5px solid #fff;
     float: left;
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/325345436-796x417.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 .left_div .gradient{
-    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+    background: #4c2c2c00 url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
     background-position: top left;
     background-size: cover;
+    /* width:  100px; */
     bottom: 0;
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 4;
-   mix-blend-mode: lighten;
+    mix-blend-mode: lighten;
 }
 .left_div .backgroung_effect{
     height: 100%;
@@ -240,6 +242,10 @@
     background-repeat: no-repeat;
     background-size: cover; 
 }
+.all_news>ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
 .top_section{
     height: 75vh;
     margin:2px;
@@ -258,6 +264,7 @@
 .latest_news{
     width: 90%;
     margin:0 auto;
+    margin-bottom: 20px;
     /*background-color: #888888;*/
 }
 .all_news img{
@@ -269,9 +276,6 @@
 }
 .all_news li{
     display: inline-block;
-    max-width: 23%;
-    /*float: left;*/
-    vertical-align: top;
 }
 .all_news ul:after{
     content: ".";
@@ -319,9 +323,9 @@ li[class*="new"]{
 .latest_funding header h1{
     display: inline-block;
     font-size: 20px;
-  font-family: 'Black Han Sans', sans-serif;
-  color: #f42;
-  cursor: pointer;
+    font-family: 'Black Han Sans', sans-serif;
+    color: #f42;
+    cursor: pointer;
 }
 .latest_funding header h1:hover{
     color: #000;
@@ -355,9 +359,9 @@ li[class*="new"]{
     font-size: 16px;
     font-family: initial;
 }
-.box-1,.box-2,.box-3,.box-4{
+/*.box-1,.box-2,.box-3,.box-4{
     margin-right: 25px;
-}
+}*/
 .box-4{
     margin-right: 0;
 }
@@ -455,12 +459,15 @@ div[class*="box"]{
 .latest_funding main{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 2em;
+    grid-column-gap: 1.5em;
 }
 .main_img{
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/ICO-predictions-for-2018_-Big-changes-for-utility-tokens-368x276.png);
-    height: 275px;
+    /* height: 275px; */
+    padding-top: 75%;
     background-position: center center;
-    background-size: cover; 
+    background-size: cover;
 }
 .latest{
     display: grid;
@@ -630,6 +637,7 @@ div[class*="box"]{
     padding: 9px;
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 10px;
      cursor: pointer;
 }
 .upper_footer li a:hover{
@@ -645,6 +653,7 @@ div[class*="box"]{
     font-family: 'Exo', sans-serif;
     opacity: 0.6;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 .menu_links li:hover{
     opacity: 1;
@@ -662,4 +671,223 @@ div[class*="box"]{
 .lower_footer span{
     color: #fff;
     font-size: 12px;
+}
+
+/* Query Selector */
+
+@media screen and (max-width:1025px){
+.left_div .gradient{
+        position:absolute;
+        width:100px;
+        height: 81px;
+        top: -88px;
+        left:-7px;
+        background-color:#000;
+        z-index:1000;
+    }   
+   header nav{
+       padding-left:100px;
+   }
+   .logo{
+       position:absolute;
+       left:-3px;
+       top: -58px;
+       width:90px;
+       height: 23px;
+       min-width:0;
+       z-index:1000;
+   }
+   .top_section{
+       height:50vh;
+   }
+   .left_div header h1{
+       font-size:30px;
+   }
+   .lower_right_div header h1, .upper_right_div header h1{
+       font-size:15px;
+   }
+   .all_news>ul,.latest_deals, .latest_funding main{
+       grid-template-columns:repeat(3,1fr);
+   }
+   .middle_section{
+       grid-template-columns:repeat(2,1fr);
+   }
+}
+@media screen and (max-width:780px){
+    .nav-1{
+        height:0;
+        padding:0;
+    }
+    .lower_left li{
+        display:inline;
+        width:0;
+        height:0;
+        display:none;
+    }
+    .right_float{
+        float:none;
+    }
+    .left_div .gradient{
+            height: 46px;
+            top: -53px;
+    }
+    .logo{
+         top: -43px;
+         width: 90px;
+         height: 23px;
+    }
+    .lower_right .right_float{
+        display:none;
+    }
+    .menu_icon{
+        position:relative
+        display:inline-block;
+        float:right;
+        width:50px;
+        height:45px;
+        border-left:1px solid #888;
+        padding:15px;
+        opacity:0.6;
+        cursor:pointer;
+    }
+    .menu_icon:hover{
+        opacity:1;
+    }
+    .menu_icon span{
+        position:absolute;
+        background-color:red;
+        width:20px;
+        height:2px;
+        display:inline-block;
+    }
+    .menu_icon span:first-child{
+        top:21px;
+    }
+    .menu_icon span:last-child{
+        top:27px;
+    }
+    .upper_nav li{
+        display:none;
+        height:0;
+        width:0;  
+    }
+   .left_div,.upper_right_div, .lower_right_div{
+        display:block;
+        width:100%;
+        height:200px;
+        float:none;
+        min-height:200px;
+   }
+      .top_section{
+       height:93vh;
+   }
+   .latest_news{
+       width:100%;
+       margin:0;
+   }
+   .all_news > ul{
+       grid-template-columns:1fr;
+   }
+   .all_news .new_1_div  , .all_news .new_2_div,
+     .all_news .new_3_div , .all_news .new_4_div,
+         .all_news .new_5_div , .all_news .new_6_div,
+             .all_news .new_7_div , .all_news .new_8_div{
+       display:grid;
+       grid-template-columns:1fr 8fr;
+       a
+   }
+   .all_news img{
+       display: block;
+       width:100%;
+       height:70px;
+   }
+   .level_1_grid{
+       grid-template-rows:1fr 1fr;
+   }
+   .all_news li{
+       margin:0;
+   }
+   .all_news div{
+       margin:3px;
+   }
+   .all_news h3{
+       margin:0;
+   }
+   .level_1_grid{
+       margin:0 !important;
+   }
+   .details{
+       margin-top:5px;
+   }
+      .latest_funding header h1{
+       display:block;
+   }
+   .latest_funding header ul{
+       float:none;
+       margin-top:10px;
+   }
+   .latest_funding header{
+       margin-bottom:10px;
+   }
+   .latest_funding header li:last-child{
+       padding-left:0;
+       margin-left:0;
+   }
+   .latest_funding{
+       margin:5px auto;
+       width:99%;
+    }
+    .latest_funding main{
+        grid-template-columns:1fr;
+    }
+    .middle_section{
+        grid-template-columns:1fr;
+        width:98%;
+    }
+    .latest_deals{
+        grid-template-columns:1fr;
+        grid-row-gap:1em;
+    }
+        .latest_deals .level_1_grid{
+        display:grid;
+        grid-template-columns:1fr 8fr;
+        grid-template-rows:1fr;
+        grid-column-gap:0.5em;
+    }
+    .details_of_course h3{
+        margin:0;
+        margin-bottom:10px;
+    }
+    .main_image{
+        padding-top:100%;
+    }
+    .discount_image{
+    top: 0;
+    right: 0;
+     height:60px;
+     width:60px;
+    }
+    .discount_image div {
+    transform: rotate(45deg);
+    position: absolute;
+    font-size:14px;
+    top: 15px;
+    right: 0;
+    font-weight: 600;
+    }
+    .left_div header h1,.lower_right_div header h1, .upper_right_div header h1{
+        font-size:20px;
+    }
+    .all_news h3{
+        font-size:14px;
+    }
+    .points li{
+        font-size:14px;
+    }
+    .details_of_course h3{
+        font-size:15px;
+    }
+    .latest_news{
+        margin-bottom:20px;
+    }
 }
